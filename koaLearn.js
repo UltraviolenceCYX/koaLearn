@@ -18,7 +18,6 @@ router.get("/todo/list", async (ctx, next) => {
 });
 
 router.post("/todo/add", async (ctx, next) => {
-    console.log(1);
     let item = ctx.request.body.item
     list.push(item)
     ctx.response.body = `${list}`
